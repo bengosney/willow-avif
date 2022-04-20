@@ -1,0 +1,20 @@
+[project]
+name = "willow-avif"
+version = "0.0.1"
+description = "AVIF support for williow"
+authors = [
+    "Ben Gosney <bengosney@googlemail.com>"
+]
+python = "^3.10"
+repository = "https://github.com/bengosney/williow-avif/"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 128
+target-version = ['py310']
+
+[tool.pycln]
+all = true
