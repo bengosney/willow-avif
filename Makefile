@@ -1,10 +1,16 @@
-.PHONY: help clean test install all init dev
+.PHONY: help clean test install all init dev build
 .DEFAULT_GOAL := install
 .PRECIOUS: requirements.%.in
 
 HOOKS=$(.git/hooks/pre-commit)
 INS=$(wildcard requirements.*.in)
 REQS=$(subst in,txt,$(INS))
+
+PYTHONFILES=$(wildcard ./src/**/*.py)
+
+dist: $(PYTHONFILES) setup.py pyproject.toml
+	python -m build
+	@touch dist
 
 help: ## Display this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
