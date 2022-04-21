@@ -17,7 +17,6 @@ help: ## Display this help
 
 .pre-commit-config.yaml:
 	curl https://gist.githubusercontent.com/bengosney/4b1f1ab7012380f7e9b9d1d668626143/raw/060fd68f4c7dec75e8481e5f5a4232296282779d/.pre-commit-config.yaml > $@
-	pip install pre-commit
 	pre-commit autoupdate
 
 requirements.%.in:
@@ -42,12 +41,13 @@ requirements.txt: requirements.in
 	@touch $@ $^
 
 .git/hooks/pre-commit: .pre-commit-config.yaml
+	python -m pip install pre-commit
 	pre-commit install
 
 .envrc:
 	@echo "Setting up .envrc then stopping"
-	@echo "layout python python3.10" > $@
 	@touch -d '+10 minute' $@
+	@echo "layout python python3.10" > $@
 	@false
 
 init: .direnv .git .git/hooks/pre-commit requirements.dev.txt ## Initalise a enviroment
