@@ -1,16 +1,17 @@
 [project]
-name = "willow-avif"
+name = "willowavif"
 version = "0.0.1"
 description = "AVIF support for williow"
 authors = [
-    "Ben Gosney <bengosney@googlemail.com>"
+    {name = "Ben Gosney", email = "bengosney@googlemail.com"},
 ]
-python = "^3.6"
-repository = "https://github.com/bengosney/williow-avif/"
+#python = "^3.6"
+#repository = "https://github.com/bengosney/williow-avif/"
 
 [build-system]
-requires = ["setuptools", "wheel", "Pillow", "Willow", "pillow-avif-plugin"]
-build-backend = "setuptools.build_meta"
+requires = ["flit_core >=3.2,<4","setuptools", "wheel", "Pillow", "Willow", "pillow-avif-plugin"]
+#build-backend = "setuptools.build_meta"
+build-backend = "flit_core.buildapi"
 
 [tool.black]
 line-length = 128
