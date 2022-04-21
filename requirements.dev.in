@@ -4,3 +4,5 @@ pip-tools
 setuptools
 black
 flit
+twine
+build

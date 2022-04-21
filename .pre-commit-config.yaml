@@ -45,8 +45,3 @@ repos:
     rev: 3.9.2
     hooks:
       - id: flake8
-  - repo: https://github.com/jazzband/pip-tools
-    rev: 6.6.0
-    hooks:
-      - id: pip-compile
-        files: ^(setup\.py|requirements.txt|requirements.in)$
