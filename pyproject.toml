@@ -2,9 +2,23 @@
 name = "willowavif"
 version = "0.0.1"
 description = "AVIF support for williow"
-authors = [
-    {name = "Ben Gosney", email = "bengosney@googlemail.com"},
+authors = [{ name = "Ben Gosney", email = "bengosney@googlemail.com" }]
+dependencies = ['Pillow', 'Willow', 'pillow-avif-plugin']
+urls = { 'Bug Tracker' = 'https://github.com/bengosney/willow-avif/issues' }
+classifiers = [
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.6',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'License :: OSI Approved :: GPL v3',
+    'Operating System :: OS Independent',
+    'Environment :: Web Environment',
+    'Intended Audience :: Developers',
 ]
+readme = 'README.md'
+requires-python = '>=3.6'
 
 [build-system]
 requires = ["setuptools", "wheel", "Pillow", "Willow", "pillow-avif-plugin"]
