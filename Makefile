@@ -1,4 +1,4 @@
-.PHONY: help clean test install all init dev build
+.PHONY: help clean test install all init dev pypi
 .DEFAULT_GOAL := install
 .PRECIOUS: requirements.%.in
 
@@ -11,6 +11,12 @@ PYTHONFILES=$(wildcard ./src/**/*.py)
 dist: $(PYTHONFILES) setup.py pyproject.toml
 	python -m build
 	@touch dist
+
+pypi: dist
+	python -m twine upload dist/*
+
+pypi-test: dist
+	python3 -m twine upload --verbose --repository testpypi dist/*
 
 help: ## Display this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
