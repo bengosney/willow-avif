@@ -3,7 +3,7 @@ import os
 
 from willow.image import Image, UnrecognisedImageFormatError
 
-import src.willowavif  # noqa
+import willowavif  # noqa
 
 
 def convert_size(size_bytes):
@@ -18,7 +18,7 @@ def convert_size(size_bytes):
 
 
 from_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "from"))
-to_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "tow"))
+to_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "to"))
 
 for filename in os.listdir(from_path):
     with open(os.path.join(from_path, filename), "rb") as f:
