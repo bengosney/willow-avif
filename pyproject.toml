@@ -5,16 +5,16 @@ description = "AVIF support for williow"
 authors = [
     "Ben Gosney <bengosney@googlemail.com>"
 ]
-python = "^3.10"
+python = "^3.6"
 repository = "https://github.com/bengosney/williow-avif/"
 
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools", "wheel", "Pillow", "Willow", "pillow-avif-plugin"]
 build-backend = "setuptools.build_meta"
 
 [tool.black]
 line-length = 128
-target-version = ['py310']
+target-version = ['py36']
 
 [tool.pycln]
 all = true
