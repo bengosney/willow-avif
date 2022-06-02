@@ -4,7 +4,7 @@
 #
 #    pip-compile
 #
-pillow==9.1.0
+pillow==9.1.1
     # via -r requirements.in
 pillow-avif-plugin==1.2.2
     # via -r requirements.in
