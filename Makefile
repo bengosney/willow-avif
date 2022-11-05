@@ -8,6 +8,26 @@ REQS=$(subst in,txt,$(INS))
 
 PYTHONFILES=$(wildcard ./src/**/*.py)
 
+PYTHON_VERSION:=$(shell python --version | cut -d " " -f 2)
+PIP_PATH:=.direnv/python-$(PYTHON_VERSION)/bin/pip
+WHEEL_PATH:=.direnv/python-$(PYTHON_VERSION)/bin/wheel
+PIP_SYNC_PATH:=.direnv/python-$(PYTHON_VERSION)/bin/pip-sync
+PRE_COMMIT_PATH:=.direnv/python-$(PYTHON_VERSION)/bin/pre-commit
+
+
+$(PIP_PATH): .direnv
+	@python -m ensurepip
+	@python -m pip install --upgrade pip
+
+$(WHEEL_PATH): $(PIP_PATH) .direnv
+	@python -m pip install wheel
+
+$(PIP_SYNC_PATH): $(PIP_PATH) $(WHEEL_PATH) .direnv
+	@python -m pip install pip-tools
+
+$(PRE_COMMIT_PATH): $(PIP_PATH) $(WHEEL_PATH) .direnv
+	@python -m pip install pre-commit
+
 dist: $(PYTHONFILES) setup.py pyproject.toml
 	python -m build
 	@touch dist
@@ -27,34 +47,32 @@ help: ## Display this help
 .git: .gitignore
 	git init
 
-.pre-commit-config.yaml:
+.git/hooks/pre-commit: .git $(PRE_COMMIT_PATH)
+	pre-commit install
+
+.pre-commit-config.yaml: .git/hooks/pre-commit $(PRE_COMMIT_PATH)
 	curl https://gist.githubusercontent.com/bengosney/4b1f1ab7012380f7e9b9d1d668626143/raw/060fd68f4c7dec75e8481e5f5a4232296282779d/.pre-commit-config.yaml > $@
 	pre-commit autoupdate
 
+
 requirements.%.in:
 	echo "-c requirements.txt" > $@
-	echo "pip-tools" >> $@
-	echo "pre-commit" >> $@
 
 requirements.in:
 	@touch $@
 
 requirements.%.txt: requirements.%.in requirements.txt
 	@echo "Builing $@"
-	@pip-compile --generate-hashes -q -o $@ $^
+	@python -m piptools compile -q -o $@ $^
 
 requirements.txt: requirements.in
 	@echo "Builing $@"
-	@pip-compile --generate-hashes -q $^
+	@python -m piptools compile --generate-hashes -q $^
 
 .direnv: .envrc
 	python -m pip install --upgrade pip
 	python -m pip install wheel pip-tools
 	@touch $@ $^
-
-.git/hooks/pre-commit: .pre-commit-config.yaml
-	python -m pip install pre-commit
-	pre-commit install
 
 .envrc:
 	@echo "Setting up .envrc then stopping"
@@ -70,7 +88,9 @@ clean: ## Remove all build files
 	rm -rf .pytest_cache
 	rm -f .testmondata
 
-install: requirements.txt $(REQS) ## Install development requirements (default)
+install: $(PIP_SYNC_PATH) requirements
+
+requirements: requirements.txt $(REQS) ## Install development requirements (default)
 	@echo "Installing $^"
 	@pip-sync $^
 
