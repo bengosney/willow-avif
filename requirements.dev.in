@@ -1,4 +1,5 @@
 -c requirements.txt
+-e file:.#egg=willowavif
 pre-commit
 pip-tools
 setuptools
@@ -6,3 +7,5 @@ black
 flit
 twine
 build
+pytest
+pytest-image-diff
