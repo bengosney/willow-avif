@@ -141,7 +141,7 @@ tomli==2.0.1
     # via flit
 tomli-w==1.0.0
     # via flit
-twine==4.0.1
+twine==4.0.2
     # via -r requirements.dev.in
 typing-extensions==4.4.0
     # via pytest-image-diff
