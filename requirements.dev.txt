@@ -100,7 +100,7 @@ platformdirs==2.5.2
     #   virtualenv
 pluggy==1.0.0
     # via pytest
-pre-commit==2.20.0
+pre-commit==2.21.0
     # via -r requirements.dev.in
 pycparser==2.21
     # via cffi
@@ -135,8 +135,6 @@ secretstorage==3.3.3
     # via keyring
 six==1.16.0
     # via bleach
-toml==0.10.2
-    # via pre-commit
 tomli==2.0.1
     # via flit
 tomli-w==1.0.0
