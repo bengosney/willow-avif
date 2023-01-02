@@ -80,7 +80,7 @@ pathspec==0.10.1
     # via black
 pep517==0.13.0
     # via build
-pillow==9.3.0
+pillow==9.4.0
     # via
     #   -c requirements.txt
     #   diffimg
