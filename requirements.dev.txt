@@ -42,9 +42,9 @@ docutils==0.19
     #   readme-renderer
 filelock==3.8.0
     # via virtualenv
-flit==3.7.1
+flit==3.8.0
     # via -r requirements.dev.in
-flit-core==3.7.1
+flit-core==3.8.0
     # via flit
 identify==2.5.8
     # via pre-commit
@@ -135,8 +135,6 @@ secretstorage==3.3.3
     # via keyring
 six==1.16.0
     # via bleach
-tomli==2.0.1
-    # via flit
 tomli-w==1.0.0
     # via flit
 twine==4.0.2
