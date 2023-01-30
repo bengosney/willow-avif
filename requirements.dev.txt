@@ -114,7 +114,7 @@ pytest==7.2.1
     # via
     #   -r requirements.dev.in
     #   pytest-image-diff
-pytest-image-diff==0.0.9
+pytest-image-diff==0.0.10
     # via -r requirements.dev.in
 pyyaml==6.0
     # via pre-commit
