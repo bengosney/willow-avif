@@ -99,7 +99,7 @@ platformdirs==2.5.2
     #   virtualenv
 pluggy==1.0.0
     # via pytest
-pre-commit==3.0.2
+pre-commit==3.0.3
     # via -r requirements.dev.in
 pycparser==2.21
     # via cffi
