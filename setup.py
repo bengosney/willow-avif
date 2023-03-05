@@ -9,8 +9,8 @@ except OSError:
     long_description = description
 
 setuptools.setup(
-    name="example-package-YOUR-USERNAME-HERE",
-    version="0.0.1",
+    name="willowavif",
+    version="0.1.0",
     author="Ben Gosney",
     author_email="bengosney@googlemail.com",
     description=description,
