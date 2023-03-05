@@ -13,10 +13,7 @@ try:
     def what(wrapped, instance, args, kwargs):
         result = wrapped(*args, **kwargs)
 
-        if result is None:
-            return pathlib.Path(args[0].name).suffix[1:]
-
-        return result
+        return pathlib.Path(args[0].name).suffix[1:] if result is None else result
 
 except ModuleNotFoundError:
     pass
