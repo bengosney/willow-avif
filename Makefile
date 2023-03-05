@@ -92,7 +92,12 @@ install: $(PIP_SYNC_PATH) requirements
 
 requirements: requirements.txt $(REQS) ## Install development requirements (default)
 	@echo "Installing $^"
-	@pip-sync $^
+	@python -m piptools sync $^
+
+upgrade:
+	python -m piptools compile -U requirements.in
+	python -m piptools compile -U $(INS)
+	$(MAKE) install
 
 dev: init install ## Start work
 	code .
