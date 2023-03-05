@@ -1,6 +1,6 @@
 [project]
 name = "willowavif"
-version = "0.0.1"
+version = "0.1.0"
 description = "AVIF support for williow"
 authors = [{ name = "Ben Gosney", email = "bengosney@googlemail.com" }]
 dependencies = ['Pillow', 'Willow', 'pillow-avif-plugin']
@@ -18,6 +18,8 @@ classifiers = [
     'Intended Audience :: Developers',
     "Framework :: Wagtail",
     "Framework :: Wagtail :: 2",
+    "Framework :: Wagtail :: 3",
+    "Framework :: Wagtail :: 4",
     "Topic :: Scientific/Engineering :: Image Processing",
 ]
 readme = 'README.md'

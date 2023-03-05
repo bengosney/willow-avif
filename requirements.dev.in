@@ -1,11 +1,12 @@
 -c requirements.txt
 -e file:.#egg=willowavif
-pre-commit
-pip-tools
-setuptools
 black
-flit
-twine
 build
+flit
+icecream
+pip-tools
+pre-commit
 pytest
 pytest-image-diff
+setuptools
+twine
