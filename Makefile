@@ -28,7 +28,7 @@ $(PIP_SYNC_PATH): $(PIP_PATH) $(WHEEL_PATH) .direnv
 $(PRE_COMMIT_PATH): $(PIP_PATH) $(WHEEL_PATH) .direnv
 	@python -m pip install pre-commit
 
-dist: $(PYTHONFILES) setup.py pyproject.toml
+dist: $(PYTHONFILES) pyproject.toml
 	python -m build
 	@touch dist
 
