@@ -10,7 +10,7 @@ except OSError:
 
 setuptools.setup(
     name="willowavif",
-    version="0.1.1",
+    version="0.1.2",
     author="Ben Gosney",
     author_email="bengosney@googlemail.com",
     description=description,

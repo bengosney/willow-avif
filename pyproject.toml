@@ -1,9 +1,9 @@
 [project]
 name = "willowavif"
-version = "0.1.1"
+version = "0.1.2"
 description = "AVIF support for williow"
 authors = [{ name = "Ben Gosney", email = "bengosney@googlemail.com" }]
-dependencies = ['Pillow', 'Willow', 'pillow-avif-plugin']
+dependencies = ['Pillow', 'Willow', 'pillow-avif-plugin', 'wrapt']
 urls = { 'Bug Tracker' = 'https://github.com/bengosney/willow-avif/issues' }
 classifiers = [
     'Programming Language :: Python :: 3',
@@ -26,7 +26,7 @@ readme = 'README.md'
 requires-python = '>=3.6'
 
 [build-system]
-requires = ["setuptools", "wheel", "Pillow", "Willow", "pillow-avif-plugin"]
+requires = ["setuptools", "wheel", "Pillow", "Willow", "pillow-avif-plugin", "wrapt"]
 build-backend = "setuptools.build_meta"
 
 [tool.black]
