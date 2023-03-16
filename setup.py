@@ -10,7 +10,7 @@ except OSError:
 
 setuptools.setup(
     name="willowavif",
-    version="0.1.0",
+    version="0.1.1",
     author="Ben Gosney",
     author_email="bengosney@googlemail.com",
     description=description,
@@ -24,6 +24,7 @@ setuptools.setup(
         "Pillow",
         "Willow",
         "pillow-avif-plugin",
+        "wrapt",
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
