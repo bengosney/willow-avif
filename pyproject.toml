@@ -1,6 +1,6 @@
 [project]
 name = "willowavif"
-version = "0.1.2"
+version = "0.1.3"
 description = "AVIF support for williow"
 authors = [{ name = "Ben Gosney", email = "bengosney@googlemail.com" }]
 dependencies = ['Pillow', 'Willow', 'pillow-avif-plugin', 'wrapt']
