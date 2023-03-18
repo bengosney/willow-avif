@@ -4,6 +4,7 @@ black
 build
 flit
 icecream
+nox
 pip-tools
 pre-commit
 pytest
