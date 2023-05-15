@@ -56,9 +56,9 @@ filetype==1.2.0
     # via
     #   -c requirements.txt
     #   willow
-flit==3.8.0
+flit==3.9.0
     # via -r requirements.dev.in
-flit-core==3.8.0
+flit-core==3.9.0
     # via flit
 icecream==2.1.3
     # via -r requirements.dev.in
