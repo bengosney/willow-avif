@@ -14,7 +14,7 @@ black==23.7.0
     # via -r requirements.dev.in
 bleach==6.0.0
     # via readme-renderer
-build==1.0.0
+build==1.0.3
     # via
     #   -r requirements.dev.in
     #   pip-tools
@@ -178,7 +178,7 @@ webencodings==0.5.1
     # via bleach
 wheel==0.40.0
     # via pip-tools
-willow==1.6.1
+willow==1.6.2
     # via
     #   -c requirements.txt
     #   willowavif
