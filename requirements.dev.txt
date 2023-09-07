@@ -133,7 +133,7 @@ pygments==2.15.1
     #   rich
 pyproject-hooks==1.0.0
     # via build
-pytest==7.4.1
+pytest==7.4.2
     # via
     #   -r requirements.dev.in
     #   pytest-image-diff
@@ -178,7 +178,7 @@ webencodings==0.5.1
     # via bleach
 wheel==0.40.0
     # via pip-tools
-willow==1.6.1
+willow==1.6.2
     # via
     #   -c requirements.txt
     #   willowavif
