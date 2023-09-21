@@ -34,7 +34,7 @@ colorama==0.4.6
     # via icecream
 colorlog==6.7.0
     # via nox
-cryptography==41.0.3
+cryptography==41.0.4
     # via secretstorage
 defusedxml==0.7.1
     # via
@@ -102,7 +102,7 @@ packaging==23.1
     #   pytest
 pathspec==0.11.1
     # via black
-pillow==10.0.0
+pillow==10.0.1
     # via
     #   -c requirements.txt
     #   diffimg
