@@ -34,7 +34,7 @@ colorama==0.4.6
     # via icecream
 colorlog==6.7.0
     # via nox
-cryptography==41.0.6
+cryptography==42.0.0
     # via secretstorage
 defusedxml==0.7.1
     # via
