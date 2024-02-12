@@ -108,7 +108,7 @@ pillow==10.2.0
     #   diffimg
     #   imgdiff
     #   willowavif
-pillow-avif-plugin==1.4.2
+pillow-avif-plugin==1.4.3
     # via
     #   -c requirements.txt
     #   willowavif
@@ -162,7 +162,7 @@ six==1.16.0
     #   bleach
 tomli-w==1.0.0
     # via flit
-twine==4.0.2
+twine==5.0.0
     # via -r requirements.dev.in
 typing-extensions==4.5.0
     # via pytest-image-diff
