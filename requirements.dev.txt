@@ -112,7 +112,7 @@ pillow-avif-plugin==1.4.3
     # via
     #   -c requirements.txt
     #   willowavif
-pip-tools==7.3.0
+pip-tools==7.4.0
     # via -r requirements.dev.in
 pkginfo==1.9.6
     # via twine
@@ -132,7 +132,9 @@ pygments==2.15.1
     #   readme-renderer
     #   rich
 pyproject-hooks==1.0.0
-    # via build
+    # via
+    #   build
+    #   pip-tools
 pytest==8.0.0
     # via
     #   -r requirements.dev.in
