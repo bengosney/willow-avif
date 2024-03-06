@@ -112,7 +112,7 @@ pillow-avif-plugin==1.4.3
     # via
     #   -c requirements.txt
     #   willowavif
-pip-tools==7.4.0
+pip-tools==7.4.1
     # via -r requirements.dev.in
 pkginfo==1.9.6
     # via twine
