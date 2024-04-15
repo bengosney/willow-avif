@@ -92,7 +92,7 @@ mypy-extensions==1.0.0
     # via black
 nodeenv==1.7.0
     # via pre-commit
-nox==2024.3.2
+nox==2024.4.15
     # via -r requirements.dev.in
 packaging==23.1
     # via
