@@ -10,7 +10,7 @@ argcomplete==3.0.8
     # via nox
 asttokens==2.2.1
     # via icecream
-black==24.4.1
+black==24.4.2
     # via -r requirements.dev.in
 bleach==6.0.0
     # via readme-renderer
