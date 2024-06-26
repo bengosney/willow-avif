@@ -164,7 +164,7 @@ six==1.16.0
     #   bleach
 tomli-w==1.0.0
     # via flit
-twine==5.1.0
+twine==5.1.1
     # via -r requirements.dev.in
 typing-extensions==4.5.0
     # via pytest-image-diff
