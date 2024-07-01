@@ -8,7 +8,7 @@ defusedxml==0.7.1
     # via willow
 filetype==1.2.0
     # via willow
-pillow==10.3.0
+pillow==10.4.0
     # via willowavif (pyproject.toml)
 pillow-avif-plugin==1.4.3
     # via willowavif (pyproject.toml)
