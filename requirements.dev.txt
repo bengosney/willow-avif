@@ -188,7 +188,7 @@ wrapt==1.16.0
     # via
     #   -c requirements.txt
     #   willowavif
-zipp==3.15.0
+zipp==3.19.1
     # via importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
