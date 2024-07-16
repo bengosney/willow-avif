@@ -10,7 +10,7 @@ filetype==1.2.0
     # via willow
 pillow==10.4.0
     # via willowavif (pyproject.toml)
-pillow-avif-plugin==1.4.4
+pillow-avif-plugin==1.4.6
     # via willowavif (pyproject.toml)
 willow==1.8.0
     # via willowavif (pyproject.toml)
