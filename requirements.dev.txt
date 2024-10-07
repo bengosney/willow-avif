@@ -14,7 +14,7 @@ black==24.8.0
     # via -r requirements.dev.in
 bleach==6.0.0
     # via readme-renderer
-build==1.2.2
+build==1.2.2.post1
     # via
     #   -r requirements.dev.in
     #   pip-tools
