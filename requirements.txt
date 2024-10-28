@@ -12,7 +12,7 @@ pillow==11.0.0
     # via willowavif (pyproject.toml)
 pillow-avif-plugin==1.4.6
     # via willowavif (pyproject.toml)
-willow==1.8.0
+willow==1.9.0
     # via willowavif (pyproject.toml)
 wrapt==1.16.0
     # via willowavif (pyproject.toml)
