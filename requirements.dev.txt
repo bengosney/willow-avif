@@ -135,7 +135,7 @@ pyproject-hooks==1.0.0
     # via
     #   build
     #   pip-tools
-pytest==8.3.3
+pytest==8.3.4
     # via
     #   -r requirements.dev.in
     #   pytest-image-diff
@@ -184,7 +184,7 @@ willow==1.9.0
     # via
     #   -c requirements.txt
     #   willowavif
-wrapt==1.16.0
+wrapt==1.17.0
     # via
     #   -c requirements.txt
     #   willowavif
