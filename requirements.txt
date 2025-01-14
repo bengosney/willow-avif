@@ -14,5 +14,5 @@ pillow-avif-plugin==1.4.6
     # via willowavif (pyproject.toml)
 willow==1.9.0
     # via willowavif (pyproject.toml)
-wrapt==1.17.1
+wrapt==1.17.2
     # via willowavif (pyproject.toml)
