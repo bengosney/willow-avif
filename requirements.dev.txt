@@ -62,6 +62,8 @@ flit-core==3.10.1
     # via flit
 icecream==2.1.4
     # via -r requirements.dev.in
+id==1.5.0
+    # via twine
 identify==2.5.24
     # via pre-commit
 idna==3.7
@@ -92,7 +94,7 @@ nodeenv==1.7.0
     # via pre-commit
 nox==2024.10.9
     # via -r requirements.dev.in
-packaging==23.1
+packaging==24.2
     # via
     #   black
     #   build
@@ -113,8 +115,6 @@ pillow-avif-plugin==1.4.6
     #   willowavif
 pip-tools==7.4.1
     # via -r requirements.dev.in
-pkginfo==1.9.6
-    # via twine
 platformdirs==4.3.6
     # via
     #   black
@@ -147,6 +147,7 @@ readme-renderer==37.3
 requests==2.32.0
     # via
     #   flit
+    #   id
     #   requests-toolbelt
     #   twine
 requests-toolbelt==1.0.0
@@ -163,7 +164,7 @@ six==1.16.0
     #   bleach
 tomli-w==1.0.0
     # via flit
-twine==6.0.1
+twine==6.1.0
     # via -r requirements.dev.in
 typing-extensions==4.5.0
     # via pytest-image-diff
