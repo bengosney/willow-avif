@@ -10,6 +10,8 @@ argcomplete==3.0.8
     # via nox
 asttokens==2.2.1
     # via icecream
+attrs==25.1.0
+    # via nox
 black==25.1.0
     # via -r requirements.dev.in
 bleach==6.0.0
@@ -40,6 +42,8 @@ defusedxml==0.7.1
     # via
     #   -c requirements.txt
     #   willow
+dependency-groups==1.3.0
+    # via nox
 diffimg==0.3.0
     # via pytest-image-diff
 distlib==0.3.9
@@ -92,12 +96,13 @@ mypy-extensions==1.0.0
     # via black
 nodeenv==1.7.0
     # via pre-commit
-nox==2024.10.9
+nox==2025.2.9
     # via -r requirements.dev.in
 packaging==24.2
     # via
     #   black
     #   build
+    #   dependency-groups
     #   nox
     #   pytest
     #   twine
