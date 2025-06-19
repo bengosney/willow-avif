@@ -52,6 +52,8 @@ docutils==0.19
     # via
     #   flit
     #   readme-renderer
+exceptiongroup==1.2.2
+    # via pytest
 executing==2.1.0
     # via icecream
 filelock==3.16.1
@@ -75,7 +77,10 @@ idna==3.7
 imgdiff==1.7.1
     # via pytest-image-diff
 importlib-metadata==6.6.0
-    # via keyring
+    # via
+    #   build
+    #   keyring
+    #   twine
 iniconfig==2.0.0
     # via pytest
 jaraco-classes==3.2.3
@@ -167,13 +172,24 @@ six==1.16.0
     # via
     #   asttokens
     #   bleach
+tomli==2.2.1
+    # via
+    #   black
+    #   build
+    #   dependency-groups
+    #   nox
+    #   pip-tools
+    #   pyproject-hooks
+    #   pytest
 tomli-w==1.0.0
     # via flit
 twine==6.1.0
     # via -r requirements.dev.in
 typing-extensions==4.5.0
-    # via pytest-image-diff
-urllib3==2.2.2
+    # via
+    #   black
+    #   pytest-image-diff
+urllib3==2.5.0
     # via
     #   requests
     #   twine
